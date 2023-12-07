@@ -1,58 +1,50 @@
-# Userinyerface-Selenium
+# Automated Web Testing for Userinyerface.com
 
-## Programing Language & Framework
-Java, Selenium
-## Task type
-Test Automation, Web
-## Required skills
-Communication, OOP
-## Site: 
-https://userinyerface.com/
+This repository hosts automated tests for "https://userinyerface.com/" using Java and Selenium, with the `aquality-selenium` framework for enhanced testing capabilities.
 
-## Requirements:
-1. Validations must be performed using Asserts;
-2. Page object pattern is used for pages & elements description
-3. Use corporate web automation framework - ***aquality-selenium***
+## Programming Language & Framework
 
-## Task description
+- **Java**: Our choice for strong typing and a robust ecosystem.
+- **Selenium**: The core framework enabling browser automation.
+- **aquality-selenium**: A corporate web automation framework that extends Selenium's functionalities and facilitates the Page Object Model implementation.
 
-### Step
-***Test case 1:***
-1. Navigate to home page.
+## Task Type
 
-***Expected result:***
-Welcome page is open.
+- **Test Automation**: Scripts for verifying web application functionalities.
+- **Web**: Interactions with the web application through a browser interface.
 
-2. Click the link (in text 'Please click HERE to GO to the next page') to navigate the next page.
-***Expected result:***
-The '1' card is open.
+## Required Skills
 
-3. Input random valid password, email, accept the terms of use and click "next" button.
-***Expected result:***
-The '2' card is open.
-4. Choose 2 random interests, upload image, click "Next" button.
-***Expected result:***
-The '3' card is open.
+- **Communication**: Documented code and clear instructions.
+- **OOP (Object-Oriented Programming)**: Encapsulation, abstraction, inheritance, and polymorphism are employed throughout the codebase.
 
-***Test case 2:***
-1. Navigate to home page.
-***Expected result:***
-Welcome page is open.
+## Requirements
 
-2. Hide help form.
-***Expected result:***
-Form content is hidden.
+- **Assertions**: All validations are executed with Asserts for precision in testing.
+- **Page Object Pattern**: This design pattern is used to describe pages and elements, improving test maintenance and readability.
+- **Framework Usage**: The `aquality-selenium` framework is integrated for adherence to corporate web automation standards.
 
-***Test case 3:***
-1.Navigate to home page.
-***Expected result:***
-Welcome page is open.
+## Test Cases
 
-2. Accept cookies.
-***Expected result:***
-Form is closed.
+### Test Case 1: Functional Flow Validation
 
-***Test case 4:***
-1. Navigate to home page.
-***Expected result:***
-Validate that timer starts from "00:00"
+- **Homepage Access**: Confirm the welcome page load (`Expected: Welcome page is open`).
+- **Page Navigation**: Navigate using the provided link (`Expected: The '1' card is open`).
+- **Data Entry and Terms Acceptance**: Input valid data and accept terms (`Expected: The '2' card is open`).
+- **Interest Selection and File Upload**: Choose interests and upload an image (`Expected: The '3' card is open`).
+
+### Test Case 2: UI Element Interaction
+
+- **Homepage Verification**: Ensure the homepage is displayed properly (`Expected: Welcome page is open`).
+- **Help Form Manipulation**: Test the toggle functionality of the help form (`Expected: Form content is hidden`).
+
+### Test Case 3: Cookie Acceptance
+
+- **Homepage Confirmation**: Verify the welcome page presence (`Expected: Welcome page is open`).
+- **Cookie Consent**: Check the cookie acceptance feature (`Expected: Form is closed`).
+
+### Test Case 4: Timer Accuracy
+
+- **Homepage Load**: Confirm the welcome page loads accurately (`Expected: Validate that timer starts from "00:00"`).
+
+---
